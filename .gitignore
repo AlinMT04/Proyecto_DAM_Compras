@@ -1,21 +1,39 @@
-# Ignorar directorios de construcción de Maven, Gradle o IDEs
 target/
-build/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# Ignorar carpetas generadas por IDEs como IntelliJ, Eclipse y VS Code
+### IntelliJ IDEA ###
 .idea/
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
 *.iml
-.vscode/
+*.ipr
 
-# Ignorar archivos de configuración de NetBeans y Gradle si no usas estos entornos
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Archivos de sistema de MacOS
+### VS Code ###
+.vscode/
+
+### Mac OS ###
 .DS_Store
-
-# Archivos generados por el sistema de Windows
-Thumbs.db
